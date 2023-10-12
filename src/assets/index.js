@@ -11,8 +11,7 @@ import basecamp from './basecamp.png'
 import Boards from './Boards.png'
 import Card1 from './Card1.png'
 import Card2 from './Card2.png'
-import Card3 from './Card3.png'
-import Card4 from './Card4.png'
+import Card1 from './Card11.png'
 import CardA from './CardA.png'
 import CardB from './CardB.png'
 import CardC from './CardC.png'
@@ -41,8 +40,7 @@ export default {
     Boards,
     Card1,
     Card2,
-    Card3,
-    Card4,
+    Card11,
     CardA,
     CardB,
     CardC,
