@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'graphik';
+    src: url('./fonts/GraphikBlack.otf');
+    font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    font-family: 'graphik', sans-serif;
+}
