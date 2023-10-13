@@ -15,7 +15,7 @@ freelancers who want a simple way to plan their schedule.</p>
       <div className="" key={feat.title}>
         <div className="flex items-center gap-4">
           <img src={feat.icon} alt="" className=''/>
-          <p className='w-[153px] h-[60px]'>{feat.title}</p>
+          <p className='w-[153px] flex items-center h-[60px]'>{feat.title}</p>
         </div>
         <p className='w-[249px] h-[96px]'>{feat.text}</p>
       </div>
