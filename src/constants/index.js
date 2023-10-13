@@ -100,16 +100,37 @@ const testimonials = [
 ]
 
 const galleryTop = [
-    CardD,
-    CardC,
-    CardB,
-    CardA,
+    {
+        name: 'cardd',
+        icon: CardD,
+    },
+    {
+        name: 'cardc',
+        icon: CardC,
+    },
+    {
+        name: 'cardb',
+        icon: CardB,
+    },
+    {
+        name: 'carda',
+        icon: CardA,
+    },
 ]
 
 const galleryBottom = [
-    Card,
-    Card1,
-    Card2,
+    {
+        name: 'card',
+        icon: Card,
+    },
+    {
+        name: 'card1',
+        icon: Card1,
+    },
+    {
+        name: 'car2',
+        icon: Card2,
+    },
 ]
 
 const partners = [
