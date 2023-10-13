@@ -1,7 +1,7 @@
 import {
     Card1,
     Card2,
-    Card11,
+    Card,
     CardA,
     CardB,
     CardC,
@@ -21,7 +21,7 @@ import {
     forks,
     alien,
     infinity,
-} from '..assets'
+} from '../assets'
 
 const footer = [
     {
@@ -53,7 +53,7 @@ const footer = [
     }
 ]
 
-const navbar = [
+const navlinks = [
     {
         name: "Home",
         title: "Home",
@@ -107,7 +107,7 @@ const galleryTop = [
 ]
 
 const galleryBottom = [
-    Card11,
+    Card,
     Card1,
     Card2,
 ]
@@ -158,7 +158,7 @@ const features = [
 export {
     features,
     footer,
-    navbar,
+    navlinks,
     testimonials,
     galleryTop,
     galleryBottom,

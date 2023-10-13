@@ -11,7 +11,7 @@ import basecamp from './basecamp.png'
 import Boards from './Boards.png'
 import Card1 from './Card1.png'
 import Card2 from './Card2.png'
-import Card1 from './Card11.png'
+import Card from './Card.png'
 import CardA from './CardA.png'
 import CardB from './CardB.png'
 import CardC from './CardC.png'
@@ -26,7 +26,7 @@ import Panel from './Panel.png'
 import screens from './screens.png'
 
 
-export default {
+export {
     airbnb,
     alien,
     android,
@@ -40,7 +40,7 @@ export default {
     Boards,
     Card1,
     Card2,
-    Card11,
+    Card,
     CardA,
     CardB,
     CardC,
