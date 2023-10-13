@@ -27,8 +27,13 @@ body{
   
 }
 
-
-
 .gallery-image {
   max-width: 100%; /* Ensure images are responsive */
+}
+
+
+@media screen and (max-width: 1000px) {
+  .testimonial{
+    grid-template-columns: 1fr;
+  }
 }
