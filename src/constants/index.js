@@ -134,12 +134,12 @@ const galleryBottom = [
 ]
 
 const partners = [
-    apple,
-    apiary,
-    android,
-    basecamp,
-    airbnb,
-    ibm,
+   { icon: apple},
+   { icon: apiary},
+   { icon: android},
+   { icon: basecamp},
+   { icon: airbnb},
+   {icon: ibm},
 ]
 
 const content = [
