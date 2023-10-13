@@ -12,3 +12,17 @@
 body{
     font-family: 'graphik', sans-serif;
 }
+
+.contentCard:nth-of-type(2) > div > button{
+  margin-top: -25px;
+  width: 190px;
+}
+
+.contentCard:nth-of-type(2) > img{
+  margin-top: -50px;
+}
+
+.contentCard > div > button {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  
+}
