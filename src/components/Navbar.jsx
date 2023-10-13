@@ -4,7 +4,7 @@ import { navlinks } from '../constants'
 function Navbar() {
   return (
     <nav className='flex justify-around sticky top-0 '>
-      <img src={logo} alt="website logo" className='w-[15%] h-16 cursor-pointer' />
+      <img src={logo} alt="website logo" className='w-[12%] h-12 cursor-pointer mt-1' />
       <div className="flex items-center justify-between w-[30%]">
         {navlinks.map((link) => (
           <div className="" key={link.name}>
