@@ -1,9 +1,17 @@
+import { useState } from 'react'
 import { logo } from '../assets'
 import { navlinks } from '../constants'
 import { BiMenuAltRight } from 'react-icons/bi'
-import { GrClose } from 'react-icons/gr'
+import { AiOutlineClose } from 'react-icons/ai'
 
 function Navbar() {
+
+  const [isMenuOpen, setMenuOpen] = useState(false)
+
+  const handleMenuClick = () => {
+    setMenuOpen((prevState) => !prevState);
+  }
+
   return (
     <>
     <nav className='big-nav flex justify-around sticky top-0 '>
@@ -26,8 +34,12 @@ function Navbar() {
           <img src={logo} alt="" className='w-[100%] pt-2'/>
         </div>
          <button className='w-[130px] h-[45px] rounded-[3px] border-[1px] mt-2'>Login</button>
-         <div className=" w-[10%] pt-3 pl-4">
-          <BiMenuAltRight size='40px'/>
+         <div className=" w-[10%] pt-3  pl-4">
+         {isMenuOpen ? (
+           <BiMenuAltRight size='40px' cursor="pointer" onClick={handleMenuClick} />
+         ) : (
+          <AiOutlineClose size='40px' cursor="pointer" onClick={handleMenuClick}  style={{color: '#fff'}} />
+         )}
          </div>
     
       </div>
