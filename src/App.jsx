@@ -5,7 +5,7 @@ function App() {
  
 
   return (
-    <div className='m-0 p-0 box-border bg-[#181818] text-white'>
+    <div className='m-0 p-0 box-border bg-[#181818] text-white overflow-hidden'>
      <Navbar />
      <Hero />
      <Features />
