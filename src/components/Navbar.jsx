@@ -32,7 +32,7 @@ function Navbar() {
 
 {/* mobile navbar */}
     <nav className='md:hidden flex justify-center w-[90vw] sticky top-0'>
-      <div className="pt-5 flex justify-around">
+      <div className="pt-5 px-2 flex justify-around">
         <div className="w-[40%]">
           <img src={logo} alt="" className='w-[100%] pt-2'/>
         </div>
@@ -64,7 +64,7 @@ function Navbar() {
         animate="open"
         exit="closed"
         variants={sideVariants}
-        className="nav-container md:hidden border flex flex-col fixed text-white w-[55vw]  mt-[5vh] h-[350px] justify-around items-end pr-[18vw] ml-[40%] z-10 rounded-2xl pt-4">
+        className="nav-container md:hidden border flex flex-col fixed text-white w-[55vw]  mt-[5vh] h-[350px] justify-around items-end  pr-[18vw] ml-[28%] z-10 rounded-2xl pt-4">
           <div className="flex flex-col   items-center w-[30%]">
         {navlinks.map((link) => (
           <motion.div className="flex flex-col pr-7 text-[16px]" key={link.name}>
