@@ -7,7 +7,7 @@ function Testimonials() {
       <h2 className='text-[52px] leading-[62px]'>Testimonials</h2>
      <div className="testimonial grid grid-cols-2 gap-4 ">
      {testimonials.map((rate) => (
-        <div className="w-[430px] h-[328px] gap-[30px] p-[40px] border-[1px] border-[#DEDEDE] border-solid rounded-[10px]" key={rate.name}>
+        <div className="md:w-[430px] md:h-[328px] xs:w-[272px] sm:h-[296px] gap-[30px] p-[40px] border-[1px] border-[#DEDEDE] border-solid rounded-[10px]" key={rate.name}>
           <div className="flex gap-5">
             <img src={rate.icon} alt="" />
             <div className="">
@@ -15,7 +15,7 @@ function Testimonials() {
               <p>{rate.role}</p>
             </div>
           </div>
-          <p className="w-[320px] h-[168px] mt-7 text-[16px] leading-[24px] tracking-[0.2px]">{rate.review}</p>
+          <p className="md:w-[320px] md:h-[168px] xs:w-[24wpx] xs:h-[216px] mt-7 text-[16px] leading-[24px] tracking-[0.2px]">{rate.review}</p>
         </div>
       ))}
      </div>
