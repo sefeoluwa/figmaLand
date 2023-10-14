@@ -74,7 +74,7 @@ function Navbar() {
       </div>
           <motion.button
             variants={itemVariants}
-            className="w-[150px] h-[48px] bg-primary text-white rounded-xl text-[14px] mr-[-2.8em]"
+            className="w-[150px] h-[48px] text-black bg-white font-bold rounded-xl mb-7 text-[14px] mr-[-2.8em]"
           >
             Get Started
           </motion.button>
