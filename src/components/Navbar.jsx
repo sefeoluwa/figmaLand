@@ -17,7 +17,7 @@ function Navbar() {
 
   return (
     <>
-    <nav className='hidden md:flex lg:flex justify-around sticky top-0 '>
+    <nav className='hidden md:flex lg:flex justify-around fixed w-full'>
       <img src={logo} alt="website logo" className='w-[12%] h-12 cursor-pointer mt-1' />
       <div className="flex items-center justify-between lg:w-[30%] md:w-[40%]">
         {navlinks.map((link) => (
@@ -31,7 +31,7 @@ function Navbar() {
 
 
 {/* mobile navbar */}
-    <nav className='md:hidden flex justify-center w-[90vw] sticky top-0'>
+    <nav className='md:hidden flex justify-center w-[90vw] fixed'>
       <div className="pt-5 px-2 flex justify-around">
         <div className="w-[40%]">
           <img src={logo} alt="" className='w-[100%] pt-2'/>
@@ -64,7 +64,7 @@ function Navbar() {
         animate="open"
         exit="closed"
         variants={sideVariants}
-        className="nav-container md:hidden border flex flex-col fixed text-white w-[55vw]  mt-[5vh] h-[350px] justify-around items-end  pr-[18vw] ml-[28%] z-10 rounded-2xl pt-4">
+        className="nav-container md:hidden border flex flex-col fixed text-white w-[55vw]  mt-[120px] h-[350px] justify-around items-end  pr-[18vw] ml-[28%] z-10 rounded-2xl pt-4">
           <div className="flex flex-col   items-center w-[30%]">
         {navlinks.map((link) => (
           <motion.div className="flex flex-col pr-7 text-[16px]" key={link.name}>
