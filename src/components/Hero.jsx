@@ -2,7 +2,6 @@ import { screens } from "../assets"
 import "aos/dist/aos.css"
 import AOS from 'aos'
 import { useEffect } from "react"
-import { motion } from "framer-motion"
 
 
 function Hero() {
