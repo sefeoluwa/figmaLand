@@ -35,7 +35,14 @@ freelancers who want a simple way to plan their schedule.</p>
       <button className='w-[139px] h-[50px] rounded-[3px] border-[1px] mt-2'>Learn more</button>
     </div>
   <div className="w-screen">
-  <img src={screens} alt="screenshots of app" className="w-screen"/>
+  <img
+  data-aos="zoom-in-down" 
+  data-aos-delay="1200"
+  data-aos-easing="linear"
+  data-aos-duration='500'
+   src={screens} 
+   alt="screenshots of app" 
+   className="w-screen"/>
   </div>
     </div>
   )
