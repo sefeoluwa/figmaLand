@@ -5,7 +5,7 @@ function Features() {
   return (
     <div className='flex mt-[100px] font-sans  flex-col p-[65px 50px] gap-10 justify-center items-center'>
       <h2 className='text-[52px] leading-[62px]'>Features</h2>
-      <p className='text-[20px] flex items-center leading-[30px] tracking-[0.2px] w-[700px] h-[60px] p-[20px] pl-[60px]'>Most calendars are designed for teams. Slate is designed for 
+      <p className='heroS xs:mt-[10px] sm:mt-[10px] sm:text-center md:mt-3 text-[20px] sm:w-[411px] sm:h-[90px] flex items-center leading-[30px] tracking-[0.2px] md:w-[700px] md:h-[60px] p-[20px] pl-[60px]'>Most calendars are designed for teams. Slate is designed for 
 freelancers who want a simple way to plan their schedule.</p>
 <div className="flex justify-center flex-wrap gap-6 p-5">
   <img src={Panel} alt="" className='w-[55%]'/>
