@@ -3,6 +3,9 @@ import { logo } from '../assets'
 import { navlinks } from '../constants'
 import { BiMenuAltRight } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
+import { AnimatePresence, motion } from "framer-motion";
+import { sideVariants, itemVariants } from '../utils/motion'
+
 
 function Navbar() {
 
@@ -34,16 +37,54 @@ function Navbar() {
           <img src={logo} alt="" className='w-[100%] pt-2'/>
         </div>
          <button className='w-[130px] h-[45px] rounded-[3px] border-[1px] mt-2'>Login</button>
-         <div className=" w-[10%] pt-3  pl-4">
+         <div className=" w-[10%] pt-3  pl-4" onClick={handleMenuClick}>
          {isMenuOpen ? (
-           <BiMenuAltRight size='40px' cursor="pointer" onClick={handleMenuClick} />
+           <AiOutlineClose size='40px' cursor="pointer" />
          ) : (
-          <AiOutlineClose size='40px' cursor="pointer" onClick={handleMenuClick}  style={{color: '#fff'}} />
+          <BiMenuAltRight  size='40px' cursor="pointer"   style={{color: '#fff'}} />
          )}
          </div>
-    
       </div>
-    </nav>
+      </nav>
+
+      <AnimatePresence>
+      {isMenuOpen && (
+          <motion.aside
+          initial={{ width: 0 }}
+          animate={{
+            width: 500
+          }}
+          exit={{
+            width: 0,
+            transition: { delay: 0.7, duration: 0.3 }
+          }}
+         >
+        <motion.div 
+        initial="closed"
+        animate="open"
+        exit="closed"
+        variants={sideVariants}
+        className="nav-container md:hidden border flex flex-col fixed text-white w-[55vw]  mt-[5vh] h-[350px] justify-around items-end pr-[18vw] ml-[40%] z-10 rounded-2xl pt-4">
+          <div className="flex flex-col   items-center w-[30%]">
+        {navlinks.map((link) => (
+          <motion.div className="flex flex-col pr-7 text-[16px]" key={link.name}>
+            <motion.a href="#" variants={itemVariants} className='list-none p-3'>{link.title}</motion.a>
+          </motion.div>
+        ))}
+      </div>
+          <motion.button
+            variants={itemVariants}
+            className="w-[150px] h-[48px] bg-primary text-white rounded-xl text-[14px] mr-[-2.8em]"
+          >
+            Get Started
+          </motion.button>
+        </motion.div>
+        </motion.aside>
+      )}
+      
+
+</AnimatePresence>
+  
 
 </>
   )
