@@ -19,7 +19,7 @@ function Navbar() {
     <>
     <nav className='hidden md:flex lg:flex justify-around sticky top-0 '>
       <img src={logo} alt="website logo" className='w-[12%] h-12 cursor-pointer mt-1' />
-      <div className="flex items-center justify-between w-[30%]">
+      <div className="flex items-center justify-between lg:w-[30%] md:w-[40%]">
         {navlinks.map((link) => (
           <div className="" key={link.name}>
             <a href="#" className='list-none'>{link.title}</a>
