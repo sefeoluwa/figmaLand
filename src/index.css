@@ -37,6 +37,10 @@ body{
   .testimonial{
     grid-template-columns: 1fr;
   }
+ 
+}
+
+@media screen and (max-width: 768px) {
   .big-nav{
     display: none;
   }
