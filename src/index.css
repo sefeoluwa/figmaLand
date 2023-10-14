@@ -60,6 +60,19 @@ border: 1px solid rgba(17, 0, 240, 0.3);
     gap: 52px
   }
 
+  .try{
+    text-align: center;
+  }
+
+  .try > img{
+    padding: 13px;
+  }
+
+  .trybtn{
+    margin-top: 150px;
+    margin-left: 80px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
