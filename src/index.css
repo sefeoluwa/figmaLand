@@ -73,6 +73,9 @@ border: 1px solid rgba(17, 0, 240, 0.3);
     margin-left: 80px;
   }
 
+  .foot-links > div:nth-of-type(3){
+    margin-right: 30px;
+}
 }
 
 @media screen and (max-width: 768px) {
