@@ -9,7 +9,7 @@ function Testimonials() {
     variants={staggerContainer()}
     initial="hidden"
     whileInView="show"
-    viewport={{once:false, amount:0.25}}
+    viewport={{once:true, amount:0.25}}
     className='flex mt-[200px] overflow-hidden font-sans  flex-col p-[65px 50px] gap-14 justify-center items-center'>
       <motion.h2 
        variants={textVariant()}

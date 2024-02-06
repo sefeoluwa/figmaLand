@@ -6,7 +6,11 @@ import { useEffect } from "react"
 
 function Hero() {
   useEffect (() => {
-    AOS.init({duration: 1500});
+    AOS.init({
+      mirror: false,
+      duration: 1000,
+      once: true,
+    });
   }, []);
   
   return (

@@ -8,7 +8,7 @@ function Try() {
     variants={staggerContainer()}
     initial="hidden"
     whileInView="show"
-    viewport={{once:false, amount:0.25}}
+    viewport={{once:true, amount:0.25}}
     className="flex items-center justify-center">
       <div className='try flex flex-wrap mt-[200px] font-sans rounded-[33px] lg:bg-[#343434] gap-[86px] w-[1219px] justify-center items-center '>
       <div className="flex flex-col md:gap-14 xs:gap-[200px] md:pl-[50px]">
